@@ -54,11 +54,11 @@
             </div>
             <script type="text/javascript">
                 function picked(setting) {
-                    myOption = setting;
+                    let element = document.getElementById("text")
                     if(setting === 'brown') {
-                        document.getElementById("text").innerHTML = "<br><br>Your eye color is Brown. At least one of your parents have passed on this allele.";
+                        element.innerHTML = "<br><br>Your eye color is Brown. At least one of your parents have passed on this allele.";
                     } else {
-                        document.getElementById("text").innerHTML = "<br><br>Your eye color is not Brown. This means that both your parents have the same recessive allele.";
+                        element.innerHTML = "<br><br>Your eye color is not Brown. This means that both your parents have the same recessive allele.";
                     }
                 }
             </script>
